@@ -1,0 +1,16 @@
+C:\Users\Shadow\Documents\things progaming\c#\clientes cadastro\cadastroClientes\bin\Debug\net5.0\cadastroClientes.exe
+C:\Users\Shadow\Documents\things progaming\c#\clientes cadastro\cadastroClientes\bin\Debug\net5.0\cadastroClientes.deps.json
+C:\Users\Shadow\Documents\things progaming\c#\clientes cadastro\cadastroClientes\bin\Debug\net5.0\cadastroClientes.runtimeconfig.json
+C:\Users\Shadow\Documents\things progaming\c#\clientes cadastro\cadastroClientes\bin\Debug\net5.0\cadastroClientes.runtimeconfig.dev.json
+C:\Users\Shadow\Documents\things progaming\c#\clientes cadastro\cadastroClientes\bin\Debug\net5.0\cadastroClientes.dll
+C:\Users\Shadow\Documents\things progaming\c#\clientes cadastro\cadastroClientes\bin\Debug\net5.0\ref\cadastroClientes.dll
+C:\Users\Shadow\Documents\things progaming\c#\clientes cadastro\cadastroClientes\bin\Debug\net5.0\cadastroClientes.pdb
+C:\Users\Shadow\Documents\things progaming\c#\clientes cadastro\cadastroClientes\obj\Debug\net5.0\cadastroClientes.csprojAssemblyReference.cache
+C:\Users\Shadow\Documents\things progaming\c#\clientes cadastro\cadastroClientes\obj\Debug\net5.0\cadastroClientes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Shadow\Documents\things progaming\c#\clientes cadastro\cadastroClientes\obj\Debug\net5.0\cadastroClientes.AssemblyInfoInputs.cache
+C:\Users\Shadow\Documents\things progaming\c#\clientes cadastro\cadastroClientes\obj\Debug\net5.0\cadastroClientes.AssemblyInfo.cs
+C:\Users\Shadow\Documents\things progaming\c#\clientes cadastro\cadastroClientes\obj\Debug\net5.0\cadastroClientes.csproj.CoreCompileInputs.cache
+C:\Users\Shadow\Documents\things progaming\c#\clientes cadastro\cadastroClientes\obj\Debug\net5.0\cadastroClientes.dll
+C:\Users\Shadow\Documents\things progaming\c#\clientes cadastro\cadastroClientes\obj\Debug\net5.0\ref\cadastroClientes.dll
+C:\Users\Shadow\Documents\things progaming\c#\clientes cadastro\cadastroClientes\obj\Debug\net5.0\cadastroClientes.pdb
+C:\Users\Shadow\Documents\things progaming\c#\clientes cadastro\cadastroClientes\obj\Debug\net5.0\cadastroClientes.genruntimeconfig.cache
