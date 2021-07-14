@@ -4,37 +4,63 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Diagnostics;
 
-namespace cadastroClientes
+namespace Console_App_Clientes_Console
 {
     class Cliente
     {
         public string nome;
         public string telefone;
         public string cpf;
+        static List<Cliente> clientes = new List<Cliente>();
 
-        /*public static List<Cliente> lerClientes()
+        public Cliente(string _nome, string _telefone, string _cpf)
         {
-            var clientes = new List<Cliente>(); 
-            return clientes;
-        }*/
-
-        public void gravar()
-        {
-
+            this.nome = _nome;
+            this.telefone = _telefone;
+            this.cpf = _cpf;
         }
 
-        static List<Cliente> clientes = new List<Cliente>();
-        static StreamReader leitor = new StreamReader(caminhoDBCliente());
-        //StreamWriter escritor = new(caminhoDBCliente());
 
+        //metodo salvar para clientes no arquivo txt
+        public static void gravar(Cliente c)
+        {
+            clientes.Add(c);
+            retornaClientes();
+            lerClientes();
+        }
+
+
+        //caminho do txt a ser ultilizado
         public static string caminhoDBCliente()
         {
-            string caminho = @"C:\Users\Shadow\Documents\things progaming\c#\arquivo\file1.txt";
+            string caminho = @"../../db/file1.txt";
             return caminho;
         }
 
-        public static List<Cliente> lerClientes()
+
+        //metodo para retorna todos os clientes ja escritos no txt
+        private static void retornaClientes()
+        {
+            using (StreamWriter escritor = new StreamWriter(caminhoDBCliente()))
+            {
+                string linha = "nome;telefone;cpf;";
+                if (File.Exists(caminhoDBCliente()))
+                {
+                    escritor.WriteLine(linha);
+                    foreach (Cliente c in clientes)
+                    {
+                        linha = c.nome + ";" + c.telefone + ";" + c.cpf + ";";
+                        escritor.WriteLine(linha);
+                    }
+                    escritor.Close();
+                }
+            }
+        }
+
+        // metodo para ler todos os clinetes dentro do txt
+        public static void lerClientes()
         {
             if (File.Exists(caminhoDBCliente()))
             {
@@ -48,37 +74,30 @@ namespace cadastroClientes
                         if (i > 1)
                         {
                             var clienteArquivo = linha.Split(';');
-                            Cliente cliente = new Cliente();
-
-                            cliente.nome = clienteArquivo[0];
-                            cliente.telefone = clienteArquivo[1];
-                            cliente.cpf = clienteArquivo[2];
-                            clientes.Add(cliente);
+                            clientes.Add(new Cliente(clienteArquivo[0], clienteArquivo[1], clienteArquivo[2]));
                         }
 
                     }
+                    leitor.Close();
                 }
             }
-            return clientes;
+            //return clientes;
         }
 
+        //metodo para mostrar todos os clientes no txt
         public static void verClientes()
-        { 
+        {
             int id;
             int cont = clientes.Count();
             for (id = 0; id < cont; id++)
             {
+                Console.WriteLine("-------------------------------------------");
                 Console.WriteLine("Cliente {0}", id);
                 Console.WriteLine("Nome......: {0}", clientes[id].nome);
                 Console.WriteLine("Telefone..: {0}", clientes[id].telefone);
                 Console.WriteLine("CPF.......: {0}", clientes[id].cpf);
+                Console.WriteLine("-------------------------------------------");
             }
-        }
-
-        public static void fecharInputs()
-        {
-            leitor.Close();
-            //escritor.Close();
         }
     }
 }

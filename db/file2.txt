@@ -1,0 +1,2 @@
+nickname;senha;
+admin;1234;
