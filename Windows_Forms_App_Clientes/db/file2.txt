@@ -1,0 +1,5 @@
+nickname;senha;
+admin;1234;
+matheus;space02;
+cleitin;cacau;
+levi;felix;

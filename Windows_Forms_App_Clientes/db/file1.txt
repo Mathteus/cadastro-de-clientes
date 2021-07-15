@@ -1,0 +1,3 @@
+nome;telefone;cpf;
+Cleitin;215464;24641588;
+kraus;2768543865;5685454;
