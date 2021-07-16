@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1626468518 source:c:\users\shadow\documents\things progaming\arquivos c++\project code blocks 01\cadastro_clientes\main.cpp
+	<iostream>
+	<cstdlib>
+	"BancoFuncionarios.h"
+
+1626470281 c:\users\shadow\documents\things progaming\arquivos c++\project code blocks 01\cadastro_clientes\bancofuncionarios.h
+	"Funcionarios.h"
+	<fstream>
+	<vector>
+	<cstring>
+	<conio.h>
+	<stdio.h>
+
+1626466979 c:\users\shadow\documents\things progaming\arquivos c++\project code blocks 01\cadastro_clientes\funcionarios.h
+
