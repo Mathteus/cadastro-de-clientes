@@ -8,6 +8,5 @@ using namespace std;
 int main(){
     string resposta = BancoFuncionarios::lerdb();
     cout << resposta << endl;
-    cout << "asdsadsadsadasdas";
     return 0;
 }
