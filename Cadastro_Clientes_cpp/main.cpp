@@ -6,7 +6,8 @@
 using namespace std;
 
 int main(){
-    string resposta = BancoFuncionarios::lerdb();
+    BancoFuncionarios bf;
+    string resposta = bf.lerdb();
     cout << resposta << endl;
     return 0;
 }
